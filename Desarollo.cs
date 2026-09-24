@@ -46,11 +46,11 @@ class Cofre{
     }
 
     public void Abrir(){
-        if(abierto){
+        if(!abierto){
             Program.bolsa = Program.bolsa+oro;
             Console.WriteLine($"Encontraste {oro}g, por lo que tu bolsa ahora tiene {Program.bolsa}g");
         }else{
-            Console.WriteLine("El cofre esta cerrado y no tienes la llave.");
+            Console.WriteLine("El cofre está vacío.");
         }
     }
 
